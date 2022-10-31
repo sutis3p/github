@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAI 2</title>
+</head>
+<body>
+<script>
+      function insertNumberToArray() {
+          let a = [1, 2, 3, 4, 5, 6, 7]
+          let x = +prompt('nhap so nguyen x')
+          let index = +prompt('nhap vi tri index')
+          for (let i = 0; i < a.length; i++) {
+              if (index < 0 || index > a.length) {
+                  alert(a)
+              } else {
+                  a.splice(index, 0, x)
+                  alert(a)
+              }
+          }
+      }
+      insertNumberToArray()
+</script>
+
+</body>
+</html>

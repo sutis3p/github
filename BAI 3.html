@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAI 3</title>
+</head>
+<body>
+<script>
+  let sum1 = 0;
+  let a1 = +prompt('nhap so x')
+
+  function sumOfListPrime(x, sum) {
+      if (x <= 2) {
+          document.write(2)
+          sum = 2
+      } else {
+          for (let j = 2; j <= x; j++) {
+              let count = 0;
+              for (let i = 2; i < j; i++) {
+                  if (j % i == 0) {
+                      count = 1
+                  }
+              }
+              if (count == 0) {
+                  sum = sum + j
+                  document.write(j + " ")
+              }
+          }
+      }
+      document.write("<br>" + sum)
+  }
+
+  sumOfListPrime(a1, sum1)
+</script>
+</body>
+</html>

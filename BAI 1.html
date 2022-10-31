@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAI 1</title>
+</head>
+<body>
+<script>
+    let diem = [5,10,5,8,7,9];
+    let sum = 0;
+    function findAvg() {
+        for (let i = 0; i < diem.length; i++) {
+            sum = sum + diem[i];
+        }
+        return sum/diem.length;
+    }
+    document.write("Giá trị trung bình là: " + findAvg(diem));
+</script>
+</body>
+</html>
